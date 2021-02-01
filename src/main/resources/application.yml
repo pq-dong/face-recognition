@@ -28,3 +28,9 @@ spring:
       hibernate:
         show_sql: true
         globally_quoted_identifiers: true
+
+face-recognition:
+  secretId: yourid
+  secretKey: yourkey
+  swagger:
+    enabled: false

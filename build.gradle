@@ -32,6 +32,7 @@ configurations {
 }
 
 repositories {
+    maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/"}
     maven { url "http://repo.spring.io/snapshot" }
     maven { url "http://repo.spring.io/milestone" }
     jcenter()
@@ -47,15 +48,12 @@ dependencies {
         exclude group: 'ch.qos.logback', module: 'logback-classic'
     }
     implementation 'org.springframework.boot:spring-boot-starter-aop'
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 
     runtimeOnly 'mysql:mysql-connector-java:5.1.47'
     testAnnotationProcessor 'org.projectlombok:lombok'
     testCompileOnly 'org.projectlombok:lombok'
-    implementation('io.github.openfeign:feign-httpclient')
     implementation 'io.springfox:springfox-swagger2:2.9.2'
     implementation 'io.springfox:springfox-swagger-ui:2.9.2'
 
@@ -69,6 +67,10 @@ dependencies {
     implementation 'joda-time:joda-time:2.10.6'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    //腾讯相关
+    implementation 'com.tencentcloudapi:tencentcloud-sdk-java-iai:3.1.206'
+    implementation 'com.tencentcloudapi:tencentcloud-sdk-java-common:3.1.206'
 
 }
 
