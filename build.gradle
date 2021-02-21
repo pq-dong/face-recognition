@@ -48,7 +48,7 @@ dependencies {
         exclude group: 'ch.qos.logback', module: 'logback-classic'
     }
     implementation 'org.springframework.boot:spring-boot-starter-aop'
-//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     runtimeOnly 'mysql:mysql-connector-java:5.1.47'

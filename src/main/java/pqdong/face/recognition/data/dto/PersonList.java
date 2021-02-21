@@ -1,5 +1,7 @@
 package pqdong.face.recognition.data.dto;
 
+
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,15 +11,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SearchResult {
+public class PersonList {
 
-    private String personId;
+    private Long personNum;
 
-    private String faceId;
-
-    private Float score;
-
-    private String personName;
-
-
+    private List<PersonInfo> persons;
 }

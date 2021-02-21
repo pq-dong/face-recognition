@@ -13,8 +13,8 @@ spring:
     name: face-recognition
   datasource:
     driver-class-name: com.mysql.jdbc.Driver # mysql驱动
-    username: username # 你的数据库用户名
-    password: password # 你的数据库密码，url中添加数据库地址和端口
+    username: yourname # 你的数据库用户名
+    password: yourpassword # 你的数据库密码，url中添加数据库地址和端口
     url: jdbc:mysql://ip:port/face?useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&failOverReadOnly=false
   jpa:
     database : MYSQL
@@ -30,7 +30,7 @@ spring:
         globally_quoted_identifiers: true
 
 face-recognition:
-  secretId: yourid
-  secretKey: yourkey
+  secretId: your-tencentcloudapi-id
+  secretKey: your-tencentcloudapi-key
   swagger:
     enabled: false
